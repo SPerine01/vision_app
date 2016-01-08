@@ -7,3 +7,5 @@
 <%= link_to "Back", visions_path %>
 
 <%= link_to "Edit", edit_vision_path %>
+
+<%= link_to "Remove", vision_path, method: :delete, data: { confirm: "This is permanent. Are you sure?" } %>

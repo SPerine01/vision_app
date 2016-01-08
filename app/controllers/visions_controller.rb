@@ -2,6 +2,7 @@ class VisionsController < ApplicationController
 	before_action :find_vision, only: [:show, :edit, :update, :delete]
 
 	def index
+		@vision = Vision.all
 	end
 
 	def create
@@ -34,7 +35,8 @@ class VisionsController < ApplicationController
 	end
 
 	def destroy
-		
+		@vision.destroy
+		redirect_to visions_path
 	end
 
 	private
