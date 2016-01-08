@@ -1,5 +1,6 @@
 class VisionsController < ApplicationController
-	before_action: only: [:show, :edit, :update, :delete]
+	before_action :find_vision, only: [:show, :edit, :update, :delete]
+
 	def index
 	end
 
@@ -7,7 +8,7 @@ class VisionsController < ApplicationController
 		@vision = Vision.new(vision_params)
 
 		if @vision.save
-			redirect_to @vision, notice: "You successfully created your vision board"
+			redirect_to @vision, notice: "You successfully created your vision board!"
 		else
 			render "new"
 		end
@@ -25,7 +26,11 @@ class VisionsController < ApplicationController
 	end
 
 	def update
-		
+		if @vision.update(vision_params)
+			redirect_to @vision, notice: "Vision board has been updated."
+		else
+			render "edit"
+		end
 	end
 
 	def destroy
