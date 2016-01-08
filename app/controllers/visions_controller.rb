@@ -1,5 +1,5 @@
 class VisionsController < ApplicationController
-	before_action :find_vision, only: [:show, :edit, :update, :delete]
+	before_action :find_vision, only: [:show, :edit, :update, :destroy]
 
 	def index
 		@vision = Vision.all
