@@ -3,7 +3,7 @@ class VisionsController < ApplicationController
 	before_action :find_vision, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@vision = Vision.all
+		@visions = Vision.all
 	end
 
 	def create
@@ -17,7 +17,7 @@ class VisionsController < ApplicationController
 	end
 
 	def new
-		@vision = Vision.new
+		@vision = current_user.visions.build
 	end
 
 	def show
