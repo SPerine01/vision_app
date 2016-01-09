@@ -7,7 +7,7 @@ class VisionsController < ApplicationController
 	end
 
 	def create
-		@vision = Vision.new(vision_params)
+		@vision = current_user.visions.build(vision_params)
 
 		if @vision.save
 			redirect_to @vision, notice: "You successfully created your vision board!"
