@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.dropdown-menu a.icon {
+  position: relative;
+  padding-left: 40px;
+}
+.dropdown-menu a.icon .glyphicon {
+  top: 6px;
+  left: 10px;
+  font-size: 18px;
+}
