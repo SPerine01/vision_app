@@ -1,9 +1,11 @@
-<h1>New Vision</h1>
+<h1>My Vision Board</h1>
 
-<%= link_to "Add to Vision Board", new_vision_path %>
+<div class="my_visions">
+	<%= link_to "Add to Vision Board", new_vision_path %>
 
-<% @visions.each do |vision| %>
-  <h2>
-    <%= link_to vision.title, vision %>
-  </h2>
-<% end %>
+	<% @visions.each do |vision| %>
+	  <h2>
+	    <%= link_to vision.title, vision %>
+	  </h2>
+	<% end %>
+</div>
