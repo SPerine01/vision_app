@@ -1,9 +1,12 @@
 <h2> <%= @vision.title %> </h2>
 
 <p>
-<%= @vision.goal %>
+	<%= @vision.goal %>
 </p>
 
+<p>
+	<%= image_tag @vision.photo.url(:medium) %>
+</p>
 
 <%= link_to "Back", visions_path %>
 

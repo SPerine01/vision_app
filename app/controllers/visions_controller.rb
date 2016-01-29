@@ -43,7 +43,7 @@ class VisionsController < ApplicationController
 	private
 
 	def vision_params
-		params.require(:vision).permit(:title, :goal)
+		params.require(:vision).permit(:title, :goal, :photo)
 	end
 
 	def find_vision
