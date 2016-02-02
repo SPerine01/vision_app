@@ -1,13 +1,13 @@
 <h1>My Vision Board</h1>
 
-<div class="my_visions">
-	<%= link_to "Add to Vision Board", new_vision_path %>
+	<div class="my_visions">
+		<%= link_to "Add to Vision Board", new_vision_path %>
 
-	<% @visions.each do |vision| %>
-	  <h2>
-	    <%= link_to vision.title, vision %>
-	  </h2>
+		<% @visions.each do |vision| %>
+		  <h2>
+		    <%= link_to vision.title, vision %>
+		  </h2>
 
-	  <%= link_to (image_tag vision.photo.url(:medium)), vision %>
-	<% end %>
-</div>
+		  <%= link_to (image_tag vision.photo.url(:medium)), vision %>
+		<% end %>
+	</div>
