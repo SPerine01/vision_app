@@ -89,10 +89,10 @@ nav {
   		flex-flow: row wrap;
   		padding: 10px;
   		flex: 1 0 25%;
-  box-sizing: border-box;
-  padding: 1em;
-  min-width: 1%;
-
+  		box-sizing: border-box;
+  		padding: 1em;
+  		min-width: 1%;
+  		text-align: center;
 		img {
 			max-width: 100%;
 			border-radius: 10px;
@@ -101,12 +101,12 @@ nav {
 		}
 	}
 }
-.wrapper li {
-  	flex: 1 0 25%;
-  	box-sizing: border-box;
-	padding: 1em;
-  	min-width: 1%;
- }
+// .wrapper li {
+//   	flex: 1 0 25%;
+//   	box-sizing: border-box;
+// 	padding: 1em;
+//   	min-width: 1%;
+//  }
 
  .panel-body {
  	color: WhiteSmoke;

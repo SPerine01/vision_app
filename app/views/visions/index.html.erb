@@ -6,8 +6,9 @@
 			<% @visions.each do |vision| %>
 			  <div class="panel-body">
 			    	<h2> <%= link_to vision.title, vision %> </h2>
-			  </div>
+			  
 			  	<%= link_to (image_tag vision.photo.url(:medium)), vision %>
+			  	</div>
 			<% end %>
 		</div>
 	</div>
