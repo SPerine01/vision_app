@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800,300,200);
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+
+body {
+	text-align: center;
+  	background: -webkit-linear-gradient(90deg, #36465d 10%, #336699 90%); /* Chrome 10+, Saf5.1+ */
+  	background:    -moz-linear-gradient(90deg, #36465d 10%, #336699 90%); /* FF3.6+ */
+  	background:     -ms-linear-gradient(90deg, #36465d 10%, #336699 90%); /* IE10 */
+  	background:      -o-linear-gradient(90deg, #36465d 10%, #336699 90%); /* Opera 11.10+ */
+  	background:         linear-gradient(90deg, #36465d 10%, #336699 90%);; /* W3C */   
+}
+
+ul {
+	list-style: none;
+}
