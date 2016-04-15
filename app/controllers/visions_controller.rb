@@ -3,7 +3,7 @@ class VisionsController < ApplicationController
 	before_action :find_vision, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@visions = Vision.all
+		@visions = Vision.all.order("created_at DESC")
 	end
 
 	def create
